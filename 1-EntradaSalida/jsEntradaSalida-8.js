@@ -4,5 +4,13 @@ mostrar el resto entre el dividendo y el divisor.
 ej.: "El resto es 0 ."*/
 function SacarResto()
 {
-	
+	var Uno;
+	var Dos;
+	var Resultado;
+	Uno=document.getElementById('numeroDividendo').value;
+	Uno=parseInt(Uno);
+	Dos=document.getElementById('numeroDivisor').value;
+	Dos=parseInt(Dos);	
+	resultado=Uno%Dos;
+	alert(resultado);
 }
