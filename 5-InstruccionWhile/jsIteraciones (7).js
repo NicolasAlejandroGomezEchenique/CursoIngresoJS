@@ -4,18 +4,28 @@ function mostrar()
 	var contador=0;
 	var acumulador=0;
 	var respuesta='si';
+	var numero;
+	var promedio;
 
-while(contador<5)
+	contador=0;
+	acumulador=0;
+	respuesta='si';
+	promedio=parseInt(promedio);
+
+while(respuesta !="n" )
 {
-	numero=parseInt(prompt("Ingrese un numero: "));
+	contador=contador+1;
+	numero=prompt("Ingrese un numero #"+contador);
+	numero=parseInt(numero);
 
 	acumulador=acumulador + numero;
 
-	contador++;
-}//falta banda todavia 
+	respuesta=prompt("desea seguir ingresando numeros ? : (Si/No) ");
+}//sigue estando mal :´(
+	promedio=acumulador+contador;
+}
+}
 
-
-document.getElementById('suma').value=acumulador;
-document.getElementById('promedio').value=acumulador/contador;
-
+document.getElementById('suma').value="la suma es : "+acumulador;
+document.getElementById('promedio').value="el promedio es: "+promedio;
 }//FIN DE LA FUNCIÓN
