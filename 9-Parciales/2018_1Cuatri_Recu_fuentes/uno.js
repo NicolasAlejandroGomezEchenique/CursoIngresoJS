@@ -1,10 +1,15 @@
 
 function Mostrar()
 {
- var base,altura,resultado;
- base=prompt("base");
- base=parseInt(base) 
- altura=prompt("altura");
- resultado=base*3
- alert(resultado);
+ var base,altura,perimetro,area;
+ 	base=prompt("Ingrese la base: ");
+ 	altura=prompt("Ingrese la altura: ");
+ 	base=parseInt(base);
+ 	altura=parseInt(altura);
+
+
+ 	perimetro=base*3
+ 	area=(base*altura)/2
+
+ 	alert("perimetro: "+perimetro+" superficie: "+area);
 }
